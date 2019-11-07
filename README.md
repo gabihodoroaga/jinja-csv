@@ -13,14 +13,14 @@ jinja-csv -i example/test.csv -t example/example.j2 -o example/output.txt
 
 Works on Python 3.4+.
 
-```console
+```bash
 pip install https://raw.githubusercontent.com/gabihodoroaga/jinja-csv/master/dist/jinja_csv-0.1-py3-none-any.whl
 
 ```
 
 or 
 
-```console
+```bash
 git clone https://github.com/gabihodoroaga/jinja-csv.git
 
 cd jinja-csv
