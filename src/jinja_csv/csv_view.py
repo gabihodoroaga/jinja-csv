@@ -1,7 +1,7 @@
-import jinja2
+import jinja2, os
 
-from csv_model import cast_to_bool
-from csv_model import cast_to_date
+from .csv_model import cast_to_bool
+from .csv_model import cast_to_date
 
 
 class CSVJinjaView:
@@ -35,6 +35,7 @@ class CSVJinjaView:
             'bool': cast_to_bool,
             'date': cast_to_date,
             'dateformat': self.dateformat,
+            'sumcolumns': sumcolumns
         }
         self.env.filters.update(filters)
 
@@ -66,6 +67,12 @@ def columns(rows, column_list=None):
     if column_list is None:
         return cols
     return [cols[idx] for idx in column_list]
+
+def sumcolumns(rows, column_list=None):
+    cols = rows.cols()
+    if column_list is None:
+        return cols.length
+    return len(column_list)
 
 def sortedby(rows, sortkeys):
     def keyfunc(row):

@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: jinja-csv
+Version: 0.1
+Summary: Use Jinja templates to format data from CSV files
+Home-page: https://github.com/gabihodoroaga/jinja-csv
+Author: Raymond Chee, Gabriel Hodoroaga
+Author-email: gabihodoroaga@gmail.com
+License: UNKNOWN
+Description: # jinja-csv
+        
+        Use Jinja2 templates to format data from CSV files.
+        
+        Works on Python 3.4+.
+        
+        Forked from https://github.com/rjchee/jinja-csv, fixed some issues and created a package.
+        
+        ## Example usage
+        
+        ```bash
+        jinja-csv -i example/test.csv -t example/example.j2 -o example/output.txt
+        
+        ```
+        
+        ## Installation
+        
+        ```console
+        pip install https://raw.githubusercontent.com/gabihodoroaga/jinja-csv/master/dist/jinja_csv-0.1-py3-none-any.whl
+        
+        ```
+        or 
+        
+        ```console
+        git clone https://github.com/gabihodoroaga/jinja-csv.git
+        
+        cd jinja-csv
+        
+        python setup.py install
+        
+        ```
+        
+        ## Authors
+        * Raymond Chee (original author)
+        * Gabriel Hodoroaga
+        
+        ## TODO
+        * add more command line options
+        * fix tests
+        * publish the package
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
