@@ -1,5 +1,8 @@
 venv/
 build/
+dist/
+tmp/
+out/
 
 *.pyc
 .DS_Store

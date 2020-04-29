@@ -1,0 +1,4 @@
+userid,role,pass,name
+admin1,admin,password,Administrator
+user1,viewer,password,User 1
+user2,editor;admin,password,User 2

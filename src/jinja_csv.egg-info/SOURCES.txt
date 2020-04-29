@@ -1,5 +1,6 @@
 README.md
 setup.py
+src/jinja_csv/__init__.py
 src/jinja_csv/csv_model.py
 src/jinja_csv/csv_view.py
 src/jinja_csv/jinja_csv.py

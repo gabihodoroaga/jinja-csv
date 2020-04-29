@@ -3,7 +3,6 @@ import jinja2, os
 from .csv_model import cast_to_bool
 from .csv_model import cast_to_date
 
-
 class CSVJinjaView:
     def __init__(self, env=None, template_path=None, env_options=None, view_options=None):
         if env is None:

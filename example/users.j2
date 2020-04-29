@@ -1,0 +1,10 @@
+-- begin script
+{% for row in rows %}
+-- begin user script : {{row['userid']}}
+INSERT INTO user(userid,pass,name) VALUES ('{{row['userid']}}','{{row['pass']}}','{{row['name']}}');
+{% for role in row['role'].split(';') %}
+INSERT INTO role(userid,role) VALUES ('{{row['userid']}}','{{role.strip()}}');
+{% endfor %}
+-- end user script
+{% endfor %}
+-- end script

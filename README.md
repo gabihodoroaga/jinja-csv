@@ -5,7 +5,7 @@ Use Jinja2 templates to format data from CSV files.
 ## Example usage
 
 ```bash
-jinja-csv -i example/test.csv -t example/example.j2 -o example/output.txt
+jinja-csv -i example/users.csv -t example/users.j2 -o example/users.sql
 
 ```
 
