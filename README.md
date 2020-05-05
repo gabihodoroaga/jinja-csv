@@ -17,7 +17,7 @@ git clone https://github.com/gabihodoroaga/jinja-csv.git
 
 cd jinja-csv
 
-python setup.py install
+python3 setup.py install
 
 ```
 
